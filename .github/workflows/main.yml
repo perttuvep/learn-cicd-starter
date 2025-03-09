@@ -1,7 +1,8 @@
 name: citest
+
   on:
     push:
-      branches: [addtests]
+      branches: [addtests] [main]
 
 
 jobs:
