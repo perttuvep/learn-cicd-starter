@@ -1,7 +1,9 @@
 name: Gcloud
 on: 
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ["cd"]
+    types:
+      - completed
 jobs:
   auth:
     steps:
